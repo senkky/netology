@@ -10,7 +10,16 @@
 # Введите задачу: Разработать Telegram-бота
 
 
-from Task_2 import get_task, get_date
+def get_date():
+    date = input("Введите дату: ")
+
+    return date
+
+
+def get_task():
+    task = input("Введите задачу: ")
+
+    return task
 
 
 i = 3
@@ -19,3 +28,5 @@ while i > 0:
     task = get_task()
     d = dict(date=task)
     i -= 1
+
+print(type(d))
